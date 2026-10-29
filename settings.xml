@@ -1,0 +1,31 @@
+<settings>
+<servers>
+  <server>
+    <id>jwu699-jwu699-devops-cicd</id>
+    <username>aws</username>
+    <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
+  </server>
+</servers>
+<profiles>
+  <profile>
+    <id>jwu699-jwu699-devops-cicd</id>
+    <activation>
+      <activeByDefault>true</activeByDefault>
+    </activation>
+    <repositories>
+      <repository>
+        <id>jwu699-jwu699-devops-cicd</id>
+        <url>https://jwu699-663069807372.d.codeartifact.ap-southeast-2.amazonaws.com/maven/jwu699-devops-cicd/</url>
+      </repository>
+    </repositories>
+  </profile>
+</profiles>
+<mirrors>
+  <mirror>
+    <id>jwu699-jwu699-devops-cicd</id>
+    <name>jwu699-jwu699-devops-cicd</name>
+    <url>https://jwu699-663069807372.d.codeartifact.ap-southeast-2.amazonaws.com/maven/jwu699-devops-cicd/</url>
+    <mirrorOf>*</mirrorOf>
+  </mirror>
+</mirrors>
+</settings>
