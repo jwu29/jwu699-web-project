@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /target/jwu699-web-project.war
-    destination: /usr/share/tomcat/webapps/
+    destination: /usr/share/tomcat11/webapps/
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies.sh
