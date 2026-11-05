@@ -8,6 +8,8 @@
 
 <p>New change in CodePipeline!</p>
 
+<p>Another new change in CodePipeline!</p>
+
 </body>
 
 </html>
