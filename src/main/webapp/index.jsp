@@ -6,6 +6,8 @@
 
 <p>This is my web application working!</p>
 
+<p>New change in CodePipeline!</p>
+
 </body>
 
 </html>
