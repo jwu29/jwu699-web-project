@@ -1,9 +1,9 @@
 #!/bin/bash
-isExistApp="$(pgrep httpd)"
-if [[ -n $isExistApp ]]; then
-sudo systemctl stop httpd.service
+# ApplicationStop: stop services if they exist. Never fail the deployment here,
+# because on the first deploy nothing is installed yet.
+if [ -f /etc/jwu699-tomcat.env ]; then
+  source /etc/jwu699-tomcat.env
+  systemctl stop "${TOMCAT_SERVICE}" 2>/dev/null || true
 fi
-isExistApp="$(pgrep tomcat)"
-if [[ -n $isExistApp ]]; then
-sudo systemctl stop tomcat.service
-fi
+systemctl stop httpd 2>/dev/null || true
+exit 0
