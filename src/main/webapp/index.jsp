@@ -10,6 +10,8 @@
 
 <p>Another new change in CodePipeline!</p>
 
+<p>Yet another change in CodePipeline!</p>
+
 </body>
 
 </html>
